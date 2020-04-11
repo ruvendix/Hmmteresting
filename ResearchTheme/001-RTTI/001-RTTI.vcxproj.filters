@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Engine">
+      <UniqueIdentifier>{afd9c3dc-75af-4622-82b5-e3975ee8544e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Timer">
+      <UniqueIdentifier>{659ff9ee-9cfe-41cf-b810-85304374814e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Handler">
+      <UniqueIdentifier>{9463df12-e60d-497e-a587-3a0dca98ceb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Handler\ErrorHandler">
+      <UniqueIdentifier>{c3adb771-b646-43f4-bb62-6c4f2368a399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Manager">
+      <UniqueIdentifier>{45e6f78c-d8d0-4ef0-88dd-c12b0582de4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Element">
+      <UniqueIdentifier>{6c609ac0-72c7-45e1-91cb-fa45e1a88ea9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Common">
+      <UniqueIdentifier>{34fc7d45-3bc2-47a6-bffc-53ee8d371a92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Theme">
+      <UniqueIdentifier>{7da7189a-439d-4976-b05c-0ff830adf0b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Theme\FastRTTI">
+      <UniqueIdentifier>{319a94de-6806-473d-94fd-0f263f876a57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Theme\KCL">
+      <UniqueIdentifier>{0f5b0d8a-4464-424f-9233-e0d805ea36b8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SourceCode\Main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\PCH.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\Engine\Common\CommonFunc.cpp">
+      <Filter>소스 파일\Engine\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\Engine\Common\CommonLog.cpp">
+      <Filter>소스 파일\Engine\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\Engine\Element\NameTag.cpp">
+      <Filter>소스 파일\Engine\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\Engine\Handler\ErrorHandler\ErrorHandler.cpp">
+      <Filter>소스 파일\Engine\Handler\ErrorHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\Engine\Manager\PerformanceProfileManager.cpp">
+      <Filter>소스 파일\Engine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\Engine\Timer\StopwatchTimer.cpp">
+      <Filter>소스 파일\Engine\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\Theme\FastRTTI\FastRTTI.cpp">
+      <Filter>소스 파일\Theme\FastRTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\Theme\RTTI_Test.cpp">
+      <Filter>소스 파일\Theme</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SourceCode\PCH.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\Engine\Common\CommonEnum.h">
+      <Filter>소스 파일\Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\Engine\Common\CommonFunc.h">
+      <Filter>소스 파일\Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\Engine\Common\CommonLog.h">
+      <Filter>소스 파일\Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\Engine\Common\CommonMacro.h">
+      <Filter>소스 파일\Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\Engine\Common\CommonNecessary.h">
+      <Filter>소스 파일\Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\Engine\Common\CommonStruct.h">
+      <Filter>소스 파일\Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\Engine\Common\CommonTemplate.h">
+      <Filter>소스 파일\Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\Engine\Common\CommonType.h">
+      <Filter>소스 파일\Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\Engine\Element\NameTag.h">
+      <Filter>소스 파일\Engine\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\Engine\Handler\ErrorHandler\ErrorHandler.h">
+      <Filter>소스 파일\Engine\Handler\ErrorHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\Engine\Handler\ErrorHandler\ErrorType.h">
+      <Filter>소스 파일\Engine\Handler\ErrorHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\Engine\Manager\PerformanceProfileManager.h">
+      <Filter>소스 파일\Engine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\Engine\Timer\StopwatchTimer.h">
+      <Filter>소스 파일\Engine\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\Theme\KCL\KCL.h">
+      <Filter>소스 파일\Theme\KCL</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\Theme\FastRTTI\FastRTTI.h">
+      <Filter>소스 파일\Theme\FastRTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\Theme\RTTI_Test.h">
+      <Filter>소스 파일\Theme</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

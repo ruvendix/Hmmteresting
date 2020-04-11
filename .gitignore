@@ -43,3 +43,9 @@
 # Solution
 *.db-shm
 *.db-wal
+
+#intermediate
+*.lastbuildstate
+*.tlog
+*.idb
+*.lastbuildstate
