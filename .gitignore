@@ -1,0 +1,45 @@
+# Prerequisites
+*.d
+
+# Fallback
+*.VC.db
+*.ipch
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+*.iobj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.out
+*.app
+
+# Debug
+*.ilk
+*.pdb
+*.ipdb
+
+# Solution
+*.db-shm
+*.db-wal
