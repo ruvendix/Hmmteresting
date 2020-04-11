@@ -277,7 +277,7 @@ void Test_Static_Cast(Parent* pRTTI, Uint32 inputCnt)
 }
 
 template <typename TRTTI>
-void Test_Dyamic_Cast(Parent* pRTTI, Uint32 inputCnt)
+void Test_Dynamic_Cast(Parent* pRTTI, Uint32 inputCnt)
 {
 	PERFORMANCE_PROFILE_START(inputCnt);
 	for (Uint32 i = 0; i < inputCnt; ++i)

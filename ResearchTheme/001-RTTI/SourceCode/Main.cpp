@@ -19,7 +19,7 @@ Int32 main()
 	const Uint32 inputCnt = 400000000; // 4¾ï
 
 	Test_Static_Cast<Child*>(trace_new Child, inputCnt);
-	Test_Dyamic_Cast<Child*>(trace_new Child, inputCnt);
+	Test_Dynamic_Cast<Child*>(trace_new Child, inputCnt);
 	Test_Kind_Cast<Child*>(trace_new Child, inputCnt);
 	Test_KCL_Dynamic_Cast<ChildKCL*>(trace_new ChildKCL, inputCnt);
 
