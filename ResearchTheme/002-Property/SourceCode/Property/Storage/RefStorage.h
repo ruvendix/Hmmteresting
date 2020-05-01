@@ -18,55 +18,56 @@ namespace property
 	namespace storage
 	{
 
-		template<class TValue>
-		class Ref : IStorage<TValue>
-		{
-		public:
+        template<class TValue>
+        class Ref : IStorage<TValue>
+        {
+        public:
 #pragma region 생성자와 소멸자
-			Ref() = default;
-			virtual ~Ref() = default;
-
-			explicit Ref(TValue& value)
-			{
+			ㄹ
+            Ref() = default;
+            virtual ~Ref() = default;
+            
+            explicit Ref(TValue& value)
+            {
 				m_value(std::addressof(value));
-			}
+            }
 #pragma endregion
 
-			void BindRef(const TValue& value)
-			{
+            void BindRef(const TValue& value)
+            {
 				// & 연산자는 오버로딩이 가능하므로 안전하게 std::addressof()를 사용함!
 				m_value = std::addressof(value);
-			}
+            }
 
 #pragma region Getter와 Setter
-			virtual const TValue& OnGet() const override
-			{
-				return *m_value;
-			}
-
-			virtual TValue& OnGetRef() override
-			{
-				return *m_value;
-			}
-
-			virtual TValue OnGetValue() const override
-			{
-				return *m_value;
-			}
-
-			virtual void OnSet(const TValue& value) override
-			{
-				if (m_value == nullptr)
-				{
-					m_value = std::addressof(*(const_cast<TValue*>(&value)));
-				}
-
-				*m_value = value;
-			}
+            virtual const TValue& OnGet() const override
+            {
+                return *m_value;
+            }
+            
+            virtual TValue& OnGetRef() override
+            {
+                return *m_value;
+            }
+            
+            virtual TValue OnGetValue() const override
+            {
+                return *m_value;
+            }
+            
+            virtual void OnSet(const TValue& value) override
+            {
+                if (m_value == nullptr)
+                {
+                    m_value = std::addressof(*(const_cast<TValue*>(&value)));
+                }
+                
+                *m_value = value;
+            }
 #pragma endregion
-
-		private:
-			TValue* m_value = nullptr;
+        
+        private:
+            TValue* m_value = nullptr;
 		};
 
 	} // namespace stroage end

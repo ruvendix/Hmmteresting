@@ -27,83 +27,84 @@ namespace property
 	{
 	public:
 #pragma region 생성자와 소멸자
-		Basic() = default;
-		~Basic() = default;
-
-		explicit Basic(const TValue& value)
-		{
+        Basic() = default;
+        ~Basic() = default;
+        
+        explicit Basic(const TValue& value)
+        {
 			set(value);
-		}
-
-		Basic(const TStorage& storage) :
+        }
+        
+        Basic(const TStorage& storage) : 
 			m_storage(storage)
-		{
-
-		}
+        {
+        
+        }
 #pragma endregion
 
 #pragma region 프로퍼티 Getter와 Setter
-		// 1. const T& => get => 기본
-		// 2. T& => getRef => 참조자
-		// 3. T => getValue => 복사인데 복사 생략(Copy Elision)이 될 수도 있음...
-
-		const TValue& get() const
-		{
-			return m_storage.OnGet();
-		}
-
-		// 캐스팅을 이용한 방법
-		operator const TValue& () const
-		{
-			return m_storage.OnGet();
-		}
-
-		const TValue& operator()() const
-		{
-			return m_storage.OnGet();
-		}
-
-		TValue& getRef()
-		{
-			return m_storage.OnGetRef();
-		}
-
-		TValue getValue() const
-		{
-			return m_storage.OnGetValue();
-		}
-
-		void set(const TValue& value)
-		{
-			m_storage.OnSet(value);
-		}
-
-		void operator()(const TValue& value)
-		{
-			set(value);
-		}
-
-		void operator=(const TValue& value)
-		{
-			set(value);
-		}
+        // 1. const T& => get => 기본
+        // 2. T& => getRef => 참조자
+        // 3. T => getValue => 복사인데 복사 생략(Copy Elision)이 될 수도 있음...
+        
+        const TValue& get() const
+        {
+            return m_storage.OnGet();
+        }
+        
+        // 캐스팅을 이용한 방법
+        operator const TValue& () const
+        {
+            return m_storage.OnGet();
+        }
+        
+        const TValue& operator()() const
+        {
+            return m_storage.OnGet();
+        }
+        
+        TValue& getRef()
+        {
+            return m_storage.OnGetRef();
+        }
+        
+        TValue getValue() const
+        {
+            return m_storage.OnGetValue();
+        }
+        
+        void set(const TValue& value)
+        {
+            m_storage.OnSet(value);
+        }
+        
+        void operator()(const TValue& value)
+        {
+            set(value);
+        }
+        
+        void operator=(const TValue& value)
+        {
+            set(value);
+        }
 #pragma endregion
 
-		// 반환 후, 수정 가능해야 하므로 const 생략
-		TStorage& getStorage()
-		{
-			return m_storage;
-		}
-
-		// 반환 후, 수정 가능 불가능해야 하므로 const 추가
-		const TStorage& getStorage() const
-		{
-			return m_storage;
-		}
-
-	private:
-		TStorage m_storage;
+        // 반환 후, 수정 가능해야 하므로 const 생략
+        TStorage& getStorage()
+        {
+            return m_storage;
+        }
+        
+        // 반환 후, 수정 가능 불가능해야 하므로 const 추가
+        const TStorage& getStorage() const
+        {
+            return m_storage;
+        }
+    
+    private:
+        TStorage m_storage;
 	};
+
 }
 
 template <typename TValue>

@@ -22,40 +22,40 @@ namespace property
 		{
 		public:
 #pragma region 持失切人 社瑚切
-			Preservation() = default;
-			virtual ~Preservation() = default;
-
-			Preservation(const TValue& value) :
+            Preservation() = default;
+            virtual ~Preservation() = default;
+            
+            Preservation(const TValue& value) : 
 				m_value(value)
-			{
-
-			}
+            {
+            
+            }
 #pragma endregion
 
 #pragma region Getter人 Setter
-			virtual const TValue& OnGet() const override
-			{
-				return m_value;
-			}
-
-			virtual TValue& OnGetRef() override
-			{
-				return m_value;
-			}
-
-			virtual TValue OnGetValue() const override
-			{
-				return m_value;
-			}
-
-			virtual void OnSet(const TValue& value) override
-			{
-				m_value = value;
-			}
+            virtual const TValue& OnGet() const override
+            {
+                return m_value;
+            }
+            
+            virtual TValue& OnGetRef() override
+            {
+                return m_value;
+            }
+            
+            virtual TValue OnGetValue() const override
+            {
+                return m_value;
+            }
+            
+            virtual void OnSet(const TValue& value) override
+            {
+                m_value = value;
+            }
 #pragma endregion
-
-		private:
-			TValue m_value;
+        
+        private:
+            TValue m_value;
 		};
 
 	} // namespace stroage end

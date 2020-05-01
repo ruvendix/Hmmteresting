@@ -21,11 +21,11 @@ namespace property
         public:
             IStorage() = default;
             virtual ~IStorage() = default;
-
-			virtual const TValue& OnGet() const abstract;
-			virtual TValue& OnGetRef() abstract;
+            
+            virtual const TValue& OnGet() const abstract;
+            virtual TValue& OnGetRef() abstract;
             virtual TValue OnGetValue() const abstract;
-			virtual void OnSet(const TValue&) abstract;
+            virtual void OnSet(const TValue&) abstract;
         };
 
     } // namespace stroage end
