@@ -22,8 +22,7 @@ namespace property
         class Ref : IStorage<TValue>
         {
         public:
-#pragma region 持失切人 社瑚切
-			ぉ
+#pragma region 持失切人 社瑚切			
             Ref() = default;
             virtual ~Ref() = default;
             

@@ -16,7 +16,7 @@ namespace property
     {
 
         template <typename TValue>
-        class IStorage
+        class IStorage abstract
         {
         public:
             IStorage() = default;
